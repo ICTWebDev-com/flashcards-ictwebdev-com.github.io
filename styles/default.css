@@ -23,7 +23,17 @@ body {
     z-index: -1;
 }
 
+#card {
+    background-color: var(--secondary-color);
+    height: 80vh;
+    flex-basis: 80%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-content: center;
+}
+
 .row {
+    color: var(--tertiary-color);
     display: flex;
     flex-direction: row;
     flex-basis: 30%;
@@ -33,7 +43,7 @@ body {
 }
 
 #bar {
-    background-color: #000000;
+    background-color: var(--tertiary-color);
     display: flex;
     flex-direction: row;
     flex-basis: 10%;
