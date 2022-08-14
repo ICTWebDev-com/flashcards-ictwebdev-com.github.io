@@ -29,6 +29,7 @@ body {
     flex-basis: 80%;
     flex-grow: 0;
     flex-shrink: 0;
+    display: flex;
     align-content: center;
 }
 
