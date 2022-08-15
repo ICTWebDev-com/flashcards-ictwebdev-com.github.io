@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #ffffff;
-    --secondary-color: #CE1125;
-    --tertiary-color: #006847;
-    --quaternary-color: #720a14;
+    --primary-color: #413f3f;
+    --secondary-color: #ffffff;
+    --tertiary-color: #000000;
+    --quaternary-color: #B8860BFF;
     height: 100%;
 }
 
@@ -16,39 +16,93 @@ body {
     margin: 0;
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-grow: 0;
     flex-shrink: 0;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 25vh;
     z-index: -1;
+    -webkit-text-stroke-color: var(--quaternary-color);
+    -webkit-text-stroke-width: 3px;
 }
 
 #card {
     background-color: var(--secondary-color);
-    height: 80vh;
+    border: 10px var(--quaternary-color) solid;
+    border-radius: 25px;
+    width: 400px;
     flex-basis: 80%;
     flex-grow: 0;
     flex-shrink: 0;
     display: flex;
+    flex-direction: column;
     align-content: center;
+    align-items: center;
+}
+
+.problem {
+    width: 60%;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .row {
     color: var(--tertiary-color);
     display: flex;
+    align-items: flex-end;
+    justify-content: center;
     flex-direction: row;
-    flex-basis: 30%;
     flex-grow: 0;
     flex-shrink: 0;
     width: 100%;
 }
 
-#bar {
-    background-color: var(--tertiary-color);
-    display: flex;
-    flex-direction: row;
-    flex-basis: 10%;
+.num {
     flex-grow: 0;
     flex-shrink: 0;
-    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#num_1 {
+    flex-basis: 100%;
+}
+
+#operator {
+    flex-grow: 0;
+    flex-shrink: 1;
+    height: 100%;
+    justify-content: center;
+}
+
+#num_2 {
+    flex-grow: 1;
+}
+
+#equals {
+    background-color: var(--tertiary-color);
+    border: 3px solid var(--quaternary-color);
+    display: flex;
+    flex-direction: row;
+    flex-basis: 2vh;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 105%;
+}
+
+#ans {
+    flex-basis: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    #card {
+        width: 90vw;
+    }
 }
